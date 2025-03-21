@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
         glue = "automation.web.steps" ,
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports-SortRunner/cucumber.html",
-                "json:target/cucumber-reports-SortRunner/cucumber.json"
+                "html:target/cucumber-reports-RemoveRunner/cucumber.html",
+                "json:target/cucumber-reports-RemoveRunner/cucumber.json"
         }
 )
 
