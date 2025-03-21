@@ -51,15 +51,10 @@ Ensure you have the following installed:
 
 # Running Tests
 
-# Running UI Tests
 
-To execute UI tests via TestNG, run:
-mvn test -Dtest=UITestRunner
+To execute All tests via TestNG ( as I set all xml files to run in POM File, run:
+mvn test 
 
-# Running API Tests
-
-To execute API tests via Cucumber, run:
-mvn test -Dtest=APITestRunner
 
 # Reports & Logs
 • Cucumber Reports: Located in target/cucumber-reports/
