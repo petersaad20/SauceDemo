@@ -59,6 +59,7 @@ Install Dependencies Using Maven
 # Running Tests
 Run All Tests via TestNG (POM Configured)
 - mvn test
+- you can run it from XML Files folder 
 
 # Reports & Logs
 📌 Cucumber Reports: Located in target/cucumber-reports/
