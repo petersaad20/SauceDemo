@@ -44,6 +44,9 @@ Before running the tests, ensure you have the following installed:
 - Maven → For building and managing project dependencies.
 - IntelliJ IDEA / Eclipse → IDE for managing the codebase and running tests.
 - Google Chrome + ChromeDriver → For running Selenium WebDriver tests with Chrome.
+- Cucumber
+- Selenium
+- Rest Assured 
 - Git → For version control and cloning the repository.
 
 # Installation
