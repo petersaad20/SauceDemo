@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-21T09:59:14 GST" name="Command line suite" finished-at="2025-03-21T09:59:26 GST" duration-ms="11731">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.web.PerformanceTestingRunner@391d1e33]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-21T09:59:14 GST" name="Command line test" finished-at="2025-03-21T09:59:26 GST" duration-ms="11731">
+      <class name="runners.web.PerformanceTestingRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.web.PerformanceTestingRunner@391d1e33]" started-at="2025-03-21T09:59:14 GST" name="setUpClass" finished-at="2025-03-21T09:59:14 GST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4863c8ac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.web.PerformanceTestingRunner@391d1e33]" started-at="2025-03-21T09:59:14 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:59:20 GST" duration-ms="6144" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login and landing on the dashboard with different user credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Page load took too long: 24ms]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Page load took too long: 24ms
+at automation.web.common.CommonFunctions.logStatus(CommonFunctions.java:164)
+at automation.web.common.CommonFunctions.checkPageLoadTime(CommonFunctions.java:999)
+at automation.web.steps.LoginSteps.checkPageLoadTime(LoginSteps.java:136)
+at ✽.Check Page Load Time below 10(file:///C:/Users/lenovo/Desktop/ERAD/SauceDemo/src/test/resources/features/web/Visual%20&%20Performance%20Testing.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.web.PerformanceTestingRunner@391d1e33]" started-at="2025-03-21T09:59:20 GST" name="tearDownClass" finished-at="2025-03-21T09:59:26 GST" duration-ms="5577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.web.PerformanceTestingRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

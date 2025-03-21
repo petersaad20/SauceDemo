@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Task">
+    <test name="Login Task">
+        <classes>
+            <class name="runners.api.API"/>
+        </classes>
+    </test>
+</suite>

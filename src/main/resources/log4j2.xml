@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender for logging to the console -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </Console>
+
+        <!-- File Appender for logging to a file -->
+        <File name="File" fileName="logs/app.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+
+        <!-- Rolling File Appender to manage file size -->
+        <RollingFile name="RollingFile" fileName="logs/app-rolling.log" filePattern="logs/app-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %highlight{%5level} %logger{36} - %msg%n"/>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger: default log level is INFO and above -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+
+        <!-- Custom logger for specific package or class -->
+        <Logger name="org.seleniumhq" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <!-- Logger for specific class, you can adjust the level as needed -->
+        <Logger name="org.UPRS.ElementUtils" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>
