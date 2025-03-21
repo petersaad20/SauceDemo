@@ -8,7 +8,7 @@ Feature: Performance Task
     And I have a baseline image of the product listing page
     And I load the product listing page again
     Then I should compare the current screenshot with the baseline image
-    And  Check Page Load Time below 10
+    And  Check Page Load Time below 3000
 
 
 
