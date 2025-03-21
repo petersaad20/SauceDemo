@@ -1,4 +1,4 @@
-SauceDemo/
+# SauceDemo/
 │-- apiReport/              # Stores API test execution reports
 │-- logs/                   # Stores logs of test execution
 │-- src/
@@ -42,28 +42,25 @@ Ensure you have the following installed:
 • Google Chrome + ChromeDriver
 • Git
 
-Installation
+# Installation
 1. Clone this repository:
    git clone https://github.com/petersaad20/SauceDemo.git
-   cd SauceDemo
-
-3. Install dependencies
+   
+2. Install dependencies
    mvn clean install
 
-Running Tests
+# Running Tests
 
-Running UI Tests
+# Running UI Tests
 
 To execute UI tests via TestNG, run:
 mvn test -Dtest=UITestRunner
 
-Running API Tests
+# Running API Tests
 
 To execute API tests via Cucumber, run:
 mvn test -Dtest=APITestRunner
 
-Reports & Logs
-• Test Reports: Located in target/surefire-reports/
+# Reports & Logs
 • Cucumber Reports: Located in target/cucumber-reports/
-• API Reports: Located in apiReport/
 • Execution Logs: Located in logs/
