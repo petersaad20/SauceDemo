@@ -1,8 +1,6 @@
-SauceDemo Project
-Project Structure
-bash
-Copy
-Edit
+# SauceDemo Project
+# Project Structure
+
 SauceDemo/  
 ├── apiReport/                 # Stores API test execution reports  
 ├── logs/                      # Stores logs of test execution  
@@ -37,48 +35,32 @@ SauceDemo/
 ├── target/                    # Stores compiled test results & reports  
 ├── reports/                   # Stores generated test reports  
 ├── pom.xml                     # Maven dependencies and configuration  
-Prerequisites
+
+
+# Prerequisites
 Before running the tests, ensure you have the following installed:
 
-Java (JDK 8 or later) → Required to compile and run Java applications.
-Maven → For building and managing project dependencies.
-IntelliJ IDEA / Eclipse → IDE for managing the codebase and running tests.
-Google Chrome + ChromeDriver → For running Selenium WebDriver tests with Chrome.
-Git → For version control and cloning the repository.
-Installation
-Clone the Repository:
-sh
-Copy
-Edit
-git clone https://github.com/petersaad20/SauceDemo.git
-Install Dependencies Using Maven:
-sh
-Copy
-Edit
-mvn clean install
-Running Tests
-Run All Tests via TestNG (POM configured)
-sh
-Copy
-Edit
-mvn test
-Run Specific Tests
-Run Only Web Tests:
-sh
-Copy
-Edit
-mvn test -Dgroups=ui
-Run Only API Tests:
-sh
-Copy
-Edit
-mvn test -Dgroups=api
-Run Tests for a Specific Environment (e.g., Staging):
-sh
-Copy
-Edit
-mvn test -Denv=staging
-Reports & Logs
-Cucumber Reports: Located in target/cucumber-reports/
-Execution Logs: Stored in logs/
-Test Results: Available in reports/
+- Java (JDK 8 or later) → Required to compile and run Java applications.
+- Maven → For building and managing project dependencies.
+- IntelliJ IDEA / Eclipse → IDE for managing the codebase and running tests.
+- Google Chrome + ChromeDriver → For running Selenium WebDriver tests with Chrome.
+- Git → For version control and cloning the repository.
+
+# Installation
+Clone the Repository
+
+Run the following command to clone the repository:
+- git clone https://github.com/petersaad20/SauceDemo.git
+
+Install Dependencies Using Maven
+- Navigate to the project directory and install dependencies:
+- mvn clean install
+  
+# Running Tests
+Run All Tests via TestNG (POM Configured)
+- mvn test
+
+# Reports & Logs
+📌 Cucumber Reports: Located in target/cucumber-reports/
+📌 Execution Logs: Stored in logs/
+📌 Test Results: Available in reports/
